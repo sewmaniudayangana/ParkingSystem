@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="onDelivaryContext" prefHeight="265.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDelivaryContext">
+   <children>
+      <TableView fx:id="TblDelivery" layoutX="50.0" layoutY="33.0" prefHeight="200.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="colVNo" prefWidth="153.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVType" prefWidth="154.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDName" prefWidth="154.0" text="Driver Name" />
+            <TableColumn fx:id="colTime" prefWidth="154.0" text="Left Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

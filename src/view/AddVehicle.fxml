@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddVehicleContext" prefHeight="265.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="65.0" prefWidth="727.0" style="-fx-background-color: #000080;">
+         <children>
+            <Label alignment="CENTER" layoutY="20.0" prefHeight="25.0" prefWidth="728.0" text="Add Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="148.0" layoutY="89.0" text="Vehicle No">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="130.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="176.0" text="Maximum Weight">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="219.0" text="No Of Passengers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="vehicleNo1" layoutX="240.0" layoutY="72.0" onAction="#moveToVehicleType" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="vehicleCmb1" layoutX="240.0" layoutY="120.0" onAction="#moveToMaxWeight" prefHeight="25.0" prefWidth="327.0" />
+      <JFXTextField fx:id="maxWeight1" layoutX="240.0" layoutY="158.0" onAction="#moveToNoOfPassengers" prefHeight="25.0" prefWidth="327.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="noOfPassengers1" layoutX="240.0" layoutY="202.0" prefHeight="25.0" prefWidth="327.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton alignment="CENTER" layoutX="593.0" layoutY="212.0" onAction="#addVehicle" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #324ab2; -fx-background-radius: 10;" text="+Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="593.0" layoutY="167.0" onAction="#viewDetails" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #324ab2; -fx-background-radius: 10;" text="view" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

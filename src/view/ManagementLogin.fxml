@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="289.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLoginController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="61.0" prefWidth="587.0" style="-fx-background-color: #000080;">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="11.0" prefHeight="38.0" prefWidth="583.0" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="managementName" layoutX="127.0" layoutY="100.0" onAction="#goToPassword" prefHeight="25.0" prefWidth="388.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="29.0" layoutY="120.0" text="User Name ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="183.0" text="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="managementPassword" layoutX="127.0" layoutY="163.0" prefHeight="25.0" prefWidth="388.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="486.0" layoutY="239.0" onAction="#goToTasks" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #324ab2;" text="Log In">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="239.0" onAction="#goToHomePage" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #324ab2;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="Label" layoutX="126.0" layoutY="208.0" prefHeight="17.0" prefWidth="355.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
